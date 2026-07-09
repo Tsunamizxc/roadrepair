@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Асфальтирование, ямочный ремонт, укладка бордюров в Москве и МО. Профессиональное дорожное строительство с гарантией.">
+  <title>АСФАЛЬТПРО — Дорожное строительство в Москве</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__roller">
+      <svg viewBox="0 0 120 80" fill="none"><rect x="10" y="30" width="70" height="35" rx="4" fill="#2a2a2a"/><circle cx="30" cy="68" r="10" fill="#1a1a1a" stroke="#444" stroke-width="2"/><circle cx="60" cy="68" r="10" fill="#1a1a1a" stroke="#444" stroke-width="2"/><rect x="80" y="20" width="30" height="25" rx="3" fill="#E84D1A"/><rect x="85" y="10" width="20" height="12" rx="2" fill="#333"/></svg>
+    </div>
+    <div class="preloader__bar"><div class="preloader__fill"></div></div>
+    <span class="preloader__text">Укатываем покрытие...</span>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a href="#" class="logo" data-nav="asfalt">
+        <span class="logo__mark">А</span>
+        <span class="logo__text">СФАЛЬТ<span class="logo__accent">ПРО</span></span>
+      </a>
+      <nav class="nav" id="nav">
+        <button class="nav__toggle" id="navToggle" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__list">
+          <li><a href="#asfalt" class="nav__link active" data-nav="asfalt">Асфальтирование</a></li>
+          <li><a href="#demontazh" class="nav__link" data-nav="demontazh">Демонтаж</a></li>
+          <li><a href="#yamki" class="nav__link" data-nav="yamki">Ямочный ремонт</a></li>
+          <li><a href="#bordyury" class="nav__link" data-nav="bordyury">Бордюры</a></li>
+          <li><a href="#plitka" class="nav__link" data-nav="plitka">Тротуарная плитка</a></li>
+          <li><a href="#kroshka" class="nav__link" data-nav="kroshka">Асфальтная крошка</a></li>
+          <li><a href="#news" class="nav__link" data-nav="news">Новости</a></li>
+        </ul>
+      </nav>
+      <a href="tel:+74951234567" class="header__phone">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        +7 (495) 123-45-67
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== АСФАЛЬТИРОВАНИЕ ===== -->
+    <section class="page active" id="page-asfalt" data-page="asfalt">
+      <div class="hero" data-service="asfalt">
+        <div class="hero__compare" id="compare-asfalt">
+          <div class="hero__before" style="--bg: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80')">
+            <span class="hero__label hero__label--before">До</span>
+          </div>
+          <div class="hero__after" style="--bg: url('https://images.unsplash.com/photo-1581094794329-cd8118869f4c?w=1920&q=80')">
+            <span class="hero__label hero__label--after">После</span>
+          </div>
+          <div class="hero__roller" aria-hidden="true">
+            <svg viewBox="0 0 100 70" fill="none"><rect x="5" y="25" width="55" height="28" rx="3" fill="#222"/><circle cx="22" cy="56" r="8" fill="#111" stroke="#555" stroke-width="1.5"/><circle cx="45" cy="56" r="8" fill="#111" stroke="#555" stroke-width="1.5"/><rect x="60" y="18" width="35" height="22" rx="2" fill="#E84D1A"/><rect x="65" y="8" width="25" height="12" rx="2" fill="#333"/><line x1="0" y1="64" x2="100" y2="64" stroke="#E84D1A" stroke-width="3" opacity="0.6"/></svg>
+          </div>
+          <input type="range" class="hero__slider" min="0" max="100" value="0" aria-label="Сравнение до и после">
+          <div class="hero__handle" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 6l-4 6 4 6M16 6l4 6-4 6"/></svg>
+          </div>
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content container">
+          <p class="hero__tag">Москва и Московская область</p>
+          <h1 class="hero__title">Асфальтирование<br>любой сложности</h1>
+          <p class="hero__desc">От пустыря до готовой дороги — укладываем покрытие под ключ для складов, парковок и промзон.</p>
+          <div class="hero__actions">
+            <button class="btn btn--primary" data-scroll="calc-asfalt">Получить расчёт</button>
+            <button class="btn btn--ghost" data-scroll="projects">Наши работы</button>
+          </div>
+        </div>
+        <button class="hero__replay" data-replay="compare-asfalt" aria-label="Повторить анимацию">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 4v6h6M23 20v-6h-6"/><path d="M20.49 9A9 9 0 005.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 013.51 15"/></svg>
+          Показать трансформацию
+        </button>
+      </div>
+
+      <div class="calc-section" id="calc-asfalt">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-head__num">01</span>
+            <h2 class="section-head__title">Калькулятор стоимости</h2>
+            <p class="section-head__sub">Ориентировочный расчёт в реальном времени</p>
+          </div>
+          <div class="calc" data-calc="asfalt">
+            <div class="calc__form">
+              <div class="calc__field">
+                <label>Тип объекта</label>
+                <select data-field="objectType">
+                  <option value="parking">Парковка</option>
+                  <option value="road">Дорога / проезд</option>
+                  <option value="yard">Двор / территория</option>
+                  <option value="industrial">Промышленная площадка</option>
+                </select>
+              </div>
+              <div class="calc__field">
+                <label>Площадь, м²</label>
+                <input type="number" data-field="area" value="500" min="10" max="50000">
+              </div>
+              <div class="calc__field">
+                <label>Толщина покрытия, см</label>
+                <select data-field="thickness">
+                  <option value="4">4 см</option>
+                  <option value="5" selected>5 см</option>
+                  <option value="6">6 см</option>
+                  <option value="8">8 см</option>
+                  <option value="10">10 см</option>
+                </select>
+              </div>
+              <div class="calc__field">
+                <label>Вид асфальта</label>
+                <select data-field="asphaltType">
+                  <option value="hot">Горячий асфальтобетон</option>
+                  <option value="coarse">Крупнозернистая смесь</option>
+                  <option value="fine">Мелкозернистая смесь</option>
+                </select>
+              </div>
+              <div class="calc__field">
+                <label>Подготовка основания</label>
+                <select data-field="base">
+                  <option value="none">Не требуется</option>
+                  <option value="light" selected>Лёгкая (выравнивание)</option>
+                  <option value="full">Полная (щебень + песок)</option>
+                </select>
+              </div>
+              <div class="calc__field calc__field--full">
+                <label>Дополнительные работы</label>
+                <div class="calc__checks">
+                  <label class="calc__check"><input type="checkbox" data-field="drainage"> <span>Дренаж</span></label>
+                  <label class="calc__check"><input type="checkbox" data-field="marking"> <span>Разметка</span></label>
+                  <label class="calc__check"><input type="checkbox" data-field="curbs"> <span>Бордюры</span></label>
+                </div>
+              </div>
+            </div>
+            <div class="calc__result">
+              <div class="calc__result-inner">
+                <div class="calc__row"><span>Материалы</span><span class="calc__price" data-out="materials">—</span></div>
+                <div class="calc__row"><span>Работы</span><span class="calc__price" data-out="labor">—</span></div>
+                <div class="calc__divider"></div>
+                <div class="calc__row calc__row--total"><span>Итого</span><span class="calc__price calc__price--total" data-out="total">—</span></div>
+                <p class="calc__note">* Ориентировочная стоимость. Точная смета после выезда инженера.</p>
+                <button class="btn btn--primary btn--full" data-open-form="asfalt">Получить точную смету</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-info">
+        <div class="container service-info__grid">
+          <div class="service-info__text reveal">
+            <h3>Профессиональное асфальтирование</h3>
+            <p>Укладываем асфальтобетонное покрытие на объектах любого масштаба — от частных дворов до промышленных территорий площадью в десятки тысяч квадратных метров.</p>
+            <ul class="service-info__list">
+              <li>Горячий асфальт с завода-производителя</li>
+              <li>Собственный парк техники: катки, асфальтоукладчики</li>
+              <li>Гарантия на покрытие до 3 лет</li>
+              <li>Работаем по ГОСТ и СНиП</li>
+            </ul>
+          </div>
+          <div class="service-info__visual reveal">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80" alt="Асфальтоукладчик в работе" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ДЕМОНТАЖ ===== -->
+    <section class="page" id="page-demontazh" data-page="demontazh">
+      <div class="hero" data-service="demontazh">
+        <div class="hero__compare" id="compare-demontazh">
+          <div class="hero__before" style="--bg: url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1920&q=80')">
+            <span class="hero__label hero__label--before">До</span>
+          </div>
+          <div class="hero__after" style="--bg: url('https://images.unsplash.com/photo-1590674899484-d5640e85466b?w=1920&q=80')">
+            <span class="hero__label hero__label--after">После</span>
+          </div>
+          <div class="hero__roller hero__roller--excavator" aria-hidden="true">
+            <svg viewBox="0 0 100 70" fill="none"><rect x="15" y="35" width="50" height="22" rx="3" fill="#E84D1A"/><rect x="5" y="42" width="12" height="30" rx="2" fill="#555" transform="rotate(-20 11 57)"/><rect x="55" y="30" width="8" height="35" fill="#444"/><circle cx="30" cy="60" r="7" fill="#111" stroke="#555"/><circle cx="50" cy="60" r="7" fill="#111" stroke="#555"/></svg>
+          </div>
+          <input type="range" class="hero__slider" min="0" max="100" value="0" aria-label="Сравнение до и после">
+          <div class="hero__handle" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 6l-4 6 4 6M16 6l4 6-4 6"/></svg></div>
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content container">
+          <p class="hero__tag">Быстро и аккуратно</p>
+          <h1 class="hero__title">Демонтаж<br>асфальтного покрытия</h1>
+          <p class="hero__desc">Снимаем старое покрытие фрезой, вывозим отходы — готовим площадку под новое строительство.</p>
+          <div class="hero__actions">
+            <button class="btn btn--primary" data-scroll="calc-demontazh">Получить расчёт</button>
+            <button class="btn btn--ghost" data-scroll="projects">Наши работы</button>
+          </div>
+        </div>
+        <button class="hero__replay" data-replay="compare-demontazh" aria-label="Повторить анимацию">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 4v6h6M23 20v-6h-6"/><path d="M20.49 9A9 9 0 005.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 013.51 15"/></svg>
+          Показать трансформацию
+        </button>
+      </div>
+
+      <div class="calc-section" id="calc-demontazh">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-head__num">01</span>
+            <h2 class="section-head__title">Калькулятор демонтажа</h2>
+          </div>
+          <div class="calc" data-calc="demontazh">
+            <div class="calc__form">
+              <div class="calc__field">
+                <label>Площадь, м²</label>
+                <input type="number" data-field="area" value="300" min="10" max="50000">
+              </div>
+              <div class="calc__field">
+                <label>Толщина покрытия, см</label>
+                <select data-field="thickness">
+                  <option value="5">5 см</option>
+                  <option value="8" selected>8 см</option>
+                  <option value="10">10 см</option>
+                  <option value="15">15 см</option>
+                </select>
+              </div>
+              <div class="calc__field">
+                <label>Вывоз материала</label>
+                <select data-field="removal">
+                  <option value="yes" selected>С вывозом на полигон</option>
+                  <option value="no">Без вывоза (на месте)</option>
+                  <option value="recycle">С утилизацией (крошка)</option>
+                </select>
+              </div>
+            </div>
+            <div class="calc__result">
+              <div class="calc__result-inner">
+                <div class="calc__row calc__row--total"><span>Итого</span><span class="calc__price calc__price--total" data-out="total">—</span></div>
+                <p class="calc__note">* Включает демонтаж, погрузку и вывоз.</p>
+                <button class="btn btn--primary btn--full" data-open-form="demontazh">Получить точную смету</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-info">
+        <div class="container service-info__grid">
+          <div class="service-info__text reveal">
+            <h3>Демонтаж фрезой и экскаватором</h3>
+            <p>Аккуратно снимаем старое асфальтобетонное покрытие без повреждения коммуникаций и основания. Вывозим фрезеровку на лицензированные полигоны.</p>
+          </div>
+          <div class="service-info__visual reveal">
+            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80" alt="Демонтаж асфальта" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ЯМОЧНЫЙ РЕМОНТ ===== -->
+    <section class="page" id="page-yamki" data-page="yamki">
+      <div class="hero" data-service="yamki">
+        <div class="hero__compare" id="compare-yamki">
+          <div class="hero__before" style="--bg: url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1920&q=80')">
+            <span class="hero__label hero__label--before">До</span>
+          </div>
+          <div class="hero__after" style="--bg: url('https://images.unsplash.com/photo-1515169067865-5387ec356754?w=1920&q=80')">
+            <span class="hero__label hero__label--after">После</span>
+          </div>
+          <div class="hero__roller" aria-hidden="true">
+            <svg viewBox="0 0 100 70" fill="none"><rect x="5" y="25" width="55" height="28" rx="3" fill="#222"/><circle cx="22" cy="56" r="8" fill="#111" stroke="#555" stroke-width="1.5"/><circle cx="45" cy="56" r="8" fill="#111" stroke="#555" stroke-width="1.5"/><rect x="60" y="18" width="35" height="22" rx="2" fill="#E84D1A"/><rect x="65" y="8" width="25" height="12" rx="2" fill="#333"/></svg>
+          </div>
+          <input type="range" class="hero__slider" min="0" max="100" value="0" aria-label="Сравнение до и после">
+          <div class="hero__handle" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 6l-4 6 4 6M16 6l4 6-4 6"/></svg></div>
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content container">
+          <p class="hero__tag">Каток проехал — дорога как новая</p>
+          <h1 class="hero__title">Ямочный<br>ремонт</h1>
+          <p class="hero__desc">Ликвидируем выбоины и колдобины горячим или холодным асфальтом. Проезжает каток — и ямы исчезают.</p>
+          <div class="hero__actions">
+            <button class="btn btn--primary" data-scroll="calc-yamki">Получить расчёт</button>
+            <button class="btn btn--ghost" data-scroll="projects">Наши работы</button>
+          </div>
+        </div>
+        <button class="hero__replay" data-replay="compare-yamki" aria-label="Повторить анимацию">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 4v6h6M23 20v-6h-6"/><path d="M20.49 9A9 9 0 005.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 013.51 15"/></svg>
+          Показать трансформацию
+        </button>
+      </div>
+
+      <div class="calc-section" id="calc-yamki">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-head__num">01</span>
+            <h2 class="section-head__title">Калькулятор ямочного ремонта</h2>
+          </div>
+          <div class="calc" data-calc="yamki">
+            <div class="calc__form">
+              <div class="calc__field">
+                <label>Площадь, м²</label>
+                <input type="number" data-field="area" value="50" min="1" max="5000">
+              </div>
+              <div class="calc__field">
+                <label>Средняя глубина, см</label>
+                <select data-field="depth">
+                  <option value="3">3 см</option>
+                  <option value="5" selected>5 см</option>
+                  <option value="8">8 см</option>
+                  <option value="12">12 см</option>
+                </select>
+              </div>
+              <div class="calc__field">
+                <label>Вид ремонта</label>
+                <select data-field="repairType">
+                  <option value="hot">Горячий асфальт</option>
+                  <option value="cold" selected>Холодный асфальт</option>
+                  <option value="injection">Инъекционный</option>
+                </select>
+              </div>
+            </div>
+            <div class="calc__result">
+              <div class="calc__result-inner">
+                <div class="calc__row calc__row--total"><span>Итого</span><span class="calc__price calc__price--total" data-out="total">—</span></div>
+                <button class="btn btn--primary btn--full" data-open-form="yamki">Получить точную смету</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-info">
+        <div class="container service-info__grid">
+          <div class="service-info__text reveal">
+            <h3>Быстрый ямочный ремонт</h3>
+            <p>Выезд бригады в день обращения. Зачистка, заливка, уплотнение — дорога готова к эксплуатации через 2 часа.</p>
+          </div>
+          <div class="service-info__visual reveal">
+            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3787?w=800&q=80" alt="Ямочный ремонт" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== БОРДЮРЫ ===== -->
+    <section class="page" id="page-bordyury" data-page="bordyury">
+      <div class="hero" data-service="bordyury">
+        <div class="hero__compare" id="compare-bordyury">
+          <div class="hero__before" style="--bg: url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1920&q=80')">
+            <span class="hero__label hero__label--before">До</span>
+          </div>
+          <div class="hero__after" style="--bg: url('https://images.unsplash.com/photo-1590674899484-d5640e85466b?w=1920&q=80')">
+            <span class="hero__label hero__label--after">После</span>
+          </div>
+          <div class="hero__roller hero__roller--curb" aria-hidden="true">
+            <svg viewBox="0 0 100 70" fill="none"><rect x="40" y="20" width="20" height="40" fill="#888" stroke="#666"/><rect x="42" y="22" width="16" height="36" fill="#aaa"/><line x1="30" y1="60" x2="70" y2="60" stroke="#E84D1A" stroke-width="2"/></svg>
+          </div>
+          <input type="range" class="hero__slider" min="0" max="100" value="0" aria-label="Сравнение до и после">
+          <div class="hero__handle" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 6l-4 6 4 6M16 6l4 6-4 6"/></svg></div>
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content container">
+          <p class="hero__tag">Чёткие границы</p>
+          <h1 class="hero__title">Установка<br>бордюров</h1>
+          <p class="hero__desc">Дорожные, садовые и гранитные бордюры — монтаж на бетонное основание с гарантией.</p>
+          <div class="hero__actions">
+            <button class="btn btn--primary" data-scroll="calc-bordyury">Получить расчёт</button>
+            <button class="btn btn--ghost" data-scroll="projects">Наши работы</button>
+          </div>
+        </div>
+        <button class="hero__replay" data-replay="compare-bordyury" aria-label="Повторить анимацию">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 4v6h6M23 20v-6h-6"/><path d="M20.49 9A9 9 0 005.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 013.51 15"/></svg>
+          Показать трансформацию
+        </button>
+      </div>
+
+      <div class="calc-section" id="calc-bordyury">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-head__num">01</span>
+            <h2 class="section-head__title">Калькулятор бордюров</h2>
+          </div>
+          <div class="calc" data-calc="bordyury">
+            <div class="calc__form">
+              <div class="calc__field">
+                <label>Тип бордюра</label>
+                <select data-field="curbType">
+                  <option value="garden">Садовый</option>
+                  <option value="road" selected>Дорожный</option>
+                  <option value="granite">Гранитный</option>
+                </select>
+              </div>
+              <div class="calc__field">
+                <label>Погонных метров</label>
+                <input type="number" data-field="length" value="100" min="1" max="10000">
+              </div>
+              <div class="calc__field calc__field--full">
+                <label>Дополнительные работы</label>
+                <div class="calc__checks">
+                  <label class="calc__check"><input type="checkbox" data-field="demolition"> <span>Демонтаж старых</span></label>
+                  <label class="calc__check"><input type="checkbox" data-field="base" checked> <span>Подготовка основания</span></label>
+                </div>
+              </div>
+            </div>
+            <div class="calc__result">
+              <div class="calc__result-inner">
+                <div class="calc__row calc__row--total"><span>Итого</span><span class="calc__price calc__price--total" data-out="total">—</span></div>
+                <button class="btn btn--primary btn--full" data-open-form="bordyury">Получить точную смету</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-info">
+        <div class="container service-info__grid">
+          <div class="service-info__text reveal">
+            <h3>Бордюры любого типа</h3>
+            <p>Устанавливаем бордюрный камень ГОСТ 6665-91. Демонтаж старых бордюров, подготовка траншеи, укладка на раствор.</p>
+          </div>
+          <div class="service-info__visual reveal">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Установка бордюров" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ТРОТУАРНАЯ ПЛИТКА ===== -->
+    <section class="page" id="page-plitka" data-page="plitka">
+      <div class="hero" data-service="plitka">
+        <div class="hero__compare" id="compare-plitka">
+          <div class="hero__before" style="--bg: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80')">
+            <span class="hero__label hero__label--before">До</span>
+          </div>
+          <div class="hero__after" style="--bg: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80')">
+            <span class="hero__label hero__label--after">После</span>
+          </div>
+          <div class="hero__roller hero__roller--tile" aria-hidden="true">
+            <svg viewBox="0 0 100 70" fill="none"><rect x="20" y="30" width="15" height="15" fill="#bbb" stroke="#999"/><rect x="37" y="30" width="15" height="15" fill="#ccc" stroke="#999"/><rect x="54" y="30" width="15" height="15" fill="#bbb" stroke="#999"/><rect x="28" y="47" width="15" height="15" fill="#ccc" stroke="#999"/><rect x="45" y="47" width="15" height="15" fill="#bbb" stroke="#999"/></svg>
+          </div>
+          <input type="range" class="hero__slider" min="0" max="100" value="0" aria-label="Сравнение до и после">
+          <div class="hero__handle" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 6l-4 6 4 6M16 6l4 6-4 6"/></svg></div>
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content container">
+          <p class="hero__tag">Эстетика и надёжность</p>
+          <h1 class="hero__title">Укладка<br>тротуарной плитки</h1>
+          <p class="hero__desc">Брусчатка, вибропресс, гранит — создаём пешеходные зоны и подъезды, которые служат десятилетиями.</p>
+          <div class="hero__actions">
+            <button class="btn btn--primary" data-scroll="calc-plitka">Получить расчёт</button>
+            <button class="btn btn--ghost" data-scroll="projects">Наши работы</button>
+          </div>
+        </div>
+        <button class="hero__replay" data-replay="compare-plitka" aria-label="Повторить анимацию">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 4v6h6M23 20v-6h-6"/><path d="M20.49 9A9 9 0 005.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 013.51 15"/></svg>
+          Показать трансформацию
+        </button>
+      </div>
+
+      <div class="calc-section" id="calc-plitka">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-head__num">01</span>
+            <h2 class="section-head__title">Калькулятор укладки плитки</h2>
+          </div>
+          <div class="calc" data-calc="plitka">
+            <div class="calc__form">
+              <div class="calc__field">
+                <label>Тип плитки</label>
+                <select data-field="tileType">
+                  <option value="vibro">Вибропресс</option>
+                  <option value="brus" selected>Брусчатка</option>
+                  <option value="granite">Гранитная</option>
+                </select>
+              </div>
+              <div class="calc__field">
+                <label>Площадь, м²</label>
+                <input type="number" data-field="area" value="200" min="10" max="10000">
+              </div>
+              <div class="calc__field">
+                <label>Подготовка основания</label>
+                <select data-field="base">
+                  <option value="sand">Песчаная подушка</option>
+                  <option value="concrete" selected>Бетонное основание</option>
+                </select>
+              </div>
+            </div>
+            <div class="calc__result">
+              <div class="calc__result-inner">
+                <div class="calc__row"><span>Материалы</span><span class="calc__price" data-out="materials">—</span></div>
+                <div class="calc__row"><span>Работы</span><span class="calc__price" data-out="labor">—</span></div>
+                <div class="calc__divider"></div>
+                <div class="calc__row calc__row--total"><span>Итого</span><span class="calc__price calc__price--total" data-out="total">—</span></div>
+                <button class="btn btn--primary btn--full" data-open-form="plitka">Получить точную смету</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-info">
+        <div class="container service-info__grid">
+          <div class="service-info__text reveal">
+            <h3>Тротуарная плитка под ключ</h3>
+            <p>Подготовка основания, укладка по рисунку, затирка швов, установка бордюров. Работаем с любыми форматами и цветовыми решениями.</p>
+          </div>
+          <div class="service-info__visual reveal">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" alt="Тротуарная плитка" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== АСФАЛЬТНАЯ КРОШКА ===== -->
+    <section class="page" id="page-kroshka" data-page="kroshka">
+      <div class="hero" data-service="kroshka">
+        <div class="hero__compare" id="compare-kroshka">
+          <div class="hero__before" style="--bg: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80')">
+            <span class="hero__label hero__label--before">До</span>
+          </div>
+          <div class="hero__after" style="--bg: url('https://images.unsplash.com/photo-1581094794329-cd8118869f4c?w=1920&q=80')">
+            <span class="hero__label hero__label--after">После</span>
+          </div>
+          <div class="hero__roller" aria-hidden="true">
+            <svg viewBox="0 0 100 70" fill="none"><rect x="5" y="25" width="55" height="28" rx="3" fill="#222"/><circle cx="22" cy="56" r="8" fill="#111" stroke="#555" stroke-width="1.5"/><circle cx="45" cy="56" r="8" fill="#111" stroke="#555" stroke-width="1.5"/><rect x="60" y="18" width="35" height="22" rx="2" fill="#E84D1A"/></svg>
+          </div>
+          <input type="range" class="hero__slider" min="0" max="100" value="0" aria-label="Сравнение до и после">
+          <div class="hero__handle" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 6l-4 6 4 6M16 6l4 6-4 6"/></svg></div>
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content container">
+          <p class="hero__tag">Экономичное решение</p>
+          <h1 class="hero__title">Укладка<br>асфальтной крошки</h1>
+          <p class="hero__desc">Бюджетное покрытие для подъездных путей, стоянок и временных дорог. Быстро, надёжно, доступно.</p>
+          <div class="hero__actions">
+            <button class="btn btn--primary" data-scroll="calc-kroshka">Получить расчёт</button>
+            <button class="btn btn--ghost" data-scroll="projects">Наши работы</button>
+          </div>
+        </div>
+        <button class="hero__replay" data-replay="compare-kroshka" aria-label="Повторить анимацию">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 4v6h6M23 20v-6h-6"/><path d="M20.49 9A9 9 0 005.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 013.51 15"/></svg>
+          Показать трансформацию
+        </button>
+      </div>
+
+      <div class="calc-section" id="calc-kroshka">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-head__num">01</span>
+            <h2 class="section-head__title">Калькулятор асфальтной крошки</h2>
+          </div>
+          <div class="calc" data-calc="kroshka">
+            <div class="calc__form">
+              <div class="calc__field">
+                <label>Площадь, м²</label>
+                <input type="number" data-field="area" value="400" min="50" max="20000">
+              </div>
+              <div class="calc__field">
+                <label>Толщина слоя, см</label>
+                <select data-field="thickness">
+                  <option value="5">5 см</option>
+                  <option value="8" selected>8 см</option>
+                  <option value="10">10 см</option>
+                  <option value="15">15 см</option>
+                </select>
+              </div>
+              <div class="calc__field">
+                <label>Тип крошки</label>
+                <select data-field="chipType">
+                  <option value="standard" selected>Стандартная</option>
+                  <option value="fine">Мелкая фракция</option>
+                  <option value="coated">С битумным связующим</option>
+                </select>
+              </div>
+            </div>
+            <div class="calc__result">
+              <div class="calc__result-inner">
+                <div class="calc__row calc__row--total"><span>Итого</span><span class="calc__price calc__price--total" data-out="total">—</span></div>
+                <button class="btn btn--primary btn--full" data-open-form="kroshka">Получить точную смету</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-info">
+        <div class="container service-info__grid">
+          <div class="service-info__text reveal">
+            <h3>Асфальтная крошка</h3>
+            <p>Идеальное решение для подъездных путей к складам, стоянок грузового транспорта и временных дорог. Укладка и уплотнение за 1–2 дня.</p>
+          </div>
+          <div class="service-info__visual reveal">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80" alt="Укладка асфальтной крошки" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== НОВОСТИ ===== -->
+    <section class="page" id="page-news" data-page="news">
+      <div class="news-hero">
+        <div class="container">
+          <p class="hero__tag">Будьте в курсе</p>
+          <h1 class="hero__title">Новости<br>компании</h1>
+          <p class="hero__desc">Акции, завершённые проекты и полезные материалы о дорожном строительстве.</p>
+        </div>
+      </div>
+      <div class="news-section">
+        <div class="container">
+          <div class="news-grid">
+            <article class="news-card reveal">
+              <div class="news-card__img" style="background-image: url('https://images.unsplash.com/photo-1581094794329-cd8118869f4c?w=600&q=80')"></div>
+              <div class="news-card__body">
+                <time datetime="2026-06-15">15 июня 2026</time>
+                <h3>Завершили асфальтирование 12 000 м² на складе в Подольске</h3>
+                <p>За 8 рабочих дней уложили покрытие толщиной 8 см с полной подготовкой основания. Заказчик — крупный логистический оператор.</p>
+                <a href="#" class="news-card__link">Читать далее →</a>
+              </div>
+            </article>
+            <article class="news-card reveal">
+              <div class="news-card__img" style="background-image: url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3787?w=600&q=80')"></div>
+              <div class="news-card__body">
+                <time datetime="2026-05-28">28 мая 2026</time>
+                <h3>Скидка 10% на ямочный ремонт до конца лета</h3>
+                <p>Специальное предложение для управляющих компаний и ТСЖ. Выезд и оценка — бесплатно.</p>
+                <a href="#" class="news-card__link">Читать далее →</a>
+              </div>
+            </article>
+            <article class="news-card reveal">
+              <div class="news-card__img" style="background-image: url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80')"></div>
+              <div class="news-card__body">
+                <time datetime="2026-05-10">10 мая 2026</time>
+                <h3>Новая бригада по укладке тротуарной плитки</h3>
+                <p>Расширили штат — теперь берём заказы на благоустройство дворов и пешеходных зон без очереди.</p>
+                <a href="#" class="news-card__link">Читать далее →</a>
+              </div>
+            </article>
+            <article class="news-card reveal">
+              <div class="news-card__img" style="background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80')"></div>
+              <div class="news-card__body">
+                <time datetime="2026-04-22">22 апреля 2026</time>
+                <h3>Как выбрать толщину асфальтного покрытия</h3>
+                <p>Разбираем, от чего зависит толщина слоя: тип транспорта, грунт, нагрузка. Практические рекомендации от нашего инженера.</p>
+                <a href="#" class="news-card__link">Читать далее →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SHARED: PROJECTS ===== -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-head__num">02</span>
+          <h2 class="section-head__title">Выполненные проекты</h2>
+          <p class="section-head__sub">Реальные объекты в Москве и области</p>
+        </div>
+        <div class="projects__filters">
+          <button class="filter-btn active" data-filter="all">Все</button>
+          <button class="filter-btn" data-filter="asfalt">Асфальтирование</button>
+          <button class="filter-btn" data-filter="yamki">Ямочный ремонт</button>
+          <button class="filter-btn" data-filter="bordyury">Бордюры</button>
+          <button class="filter-btn" data-filter="plitka">Плитка</button>
+          <button class="filter-btn" data-filter="demontazh">Демонтаж</button>
+        </div>
+        <div class="projects__grid">
+          <div class="project-card reveal" data-category="asfalt">
+            <div class="project-card__img" style="background-image: url('https://images.unsplash.com/photo-1581094794329-cd8118869f4c?w=600&q=80')"></div>
+            <div class="project-card__info">
+              <h4>Складской комплекс, Подольск</h4>
+              <p>12 000 м² · покрытие 8 см · 8 дней</p>
+            </div>
+          </div>
+          <div class="project-card reveal" data-category="yamki">
+            <div class="project-card__img" style="background-image: url('https://images.unsplash.com/photo-1515169067865-5387ec356754?w=600&q=80')"></div>
+            <div class="project-card__info">
+              <h4>МКАД, участок 45 км</h4>
+              <p>Ямочный ремонт · 2 400 м² · 3 дня</p>
+            </div>
+          </div>
+          <div class="project-card reveal" data-category="asfalt">
+            <div class="project-card__img" style="background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80')"></div>
+            <div class="project-card__info">
+              <h4>Парковка ТЦ, Химки</h4>
+              <p>3 500 м² · разметка · 5 дней</p>
+            </div>
+          </div>
+          <div class="project-card reveal" data-category="bordyury">
+            <div class="project-card__img" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80')"></div>
+            <div class="project-card__info">
+              <h4>ЖК «Северный», Мытищи</h4>
+              <p>850 п.м. дорожных бордюров</p>
+            </div>
+          </div>
+          <div class="project-card reveal" data-category="plitka">
+            <div class="project-card__img" style="background-image: url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80')"></div>
+            <div class="project-card__info">
+              <h4>Благоустройство двора, Одинцово</h4>
+              <p>1 200 м² брусчатки · бордюры</p>
+            </div>
+          </div>
+          <div class="project-card reveal" data-category="demontazh">
+            <div class="project-card__img" style="background-image: url('https://images.unsplash.com/photo-1590674899484-d5640e85466b?w=600&q=80')"></div>
+            <div class="project-card__info">
+              <h4>Реконструкция парковки, Люберцы</h4>
+              <p>Демонтаж 2 800 м² + вывоз</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SHARED: HOW WE WORK ===== -->
+    <section class="steps">
+      <div class="container">
+        <div class="section-head section-head--light">
+          <span class="section-head__num">03</span>
+          <h2 class="section-head__title">Как мы работаем</h2>
+        </div>
+        <div class="steps__grid">
+          <div class="step reveal">
+            <span class="step__num">01</span>
+            <h4>Заявка</h4>
+            <p>Оставляете заявку или звоните — перезваниваем за 15 минут</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num">02</span>
+            <h4>Онлайн-расчёт</h4>
+            <p>Получаете ориентировочную стоимость на сайте или от инженера</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num">03</span>
+            <h4>Договор</h4>
+            <p>Выезд на объект, точная смета, подписание договора</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num">04</span>
+            <h4>Выполнение</h4>
+            <p>Работаем в срок, сдаём объект с актом и гарантией</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SHARED: CTA / CONTACT ===== -->
+    <section class="contact" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__info reveal">
+          <h2>Получите точную смету</h2>
+          <p>Оставьте заявку — инженер свяжется с вами, уточнит детали и подготовит коммерческое предложение в течение 2 часов.</p>
+          <div class="contact__details">
+            <a href="tel:+74951234567" class="contact__item">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              +7 (495) 123-45-67
+            </a>
+            <a href="mailto:info@asfaltpro.ru" class="contact__item">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              info@asfaltpro.ru
+            </a>
+            <div class="contact__item">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Москва и Московская область
+            </div>
+          </div>
+        </div>
+        <form class="contact__form reveal" id="contactForm">
+          <input type="hidden" name="service" id="formService" value="">
+          <input type="hidden" name="calcData" id="formCalcData" value="">
+          <div class="form__field">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+          </div>
+          <div class="form__field">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
+          </div>
+          <div class="form__field">
+            <label for="message">Комментарий</label>
+            <textarea id="message" name="message" rows="3" placeholder="Опишите объект или задайте вопрос"></textarea>
+          </div>
+          <div class="form__calc-summary" id="calcSummary" hidden></div>
+          <button type="submit" class="btn btn--primary btn--full">Получить точную смету</button>
+          <p class="form__privacy">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__mark">А</span>
+        <span>АСФАЛЬТПРО © 2026</span>
+      </div>
+      <p class="footer__text">Дорожное строительство и благоустройство в Москве и МО</p>
+    </div>
+  </footer>
+
+  <!-- Success modal -->
+  <div class="modal" id="successModal" hidden>
+    <div class="modal__backdrop"></div>
+    <div class="modal__box">
+      <button class="modal__close" aria-label="Закрыть">&times;</button>
+      <div class="modal__icon">✓</div>
+      <h3>Заявка отправлена</h3>
+      <p>Инженер свяжется с вами в течение 2 часов в рабочее время.</p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
