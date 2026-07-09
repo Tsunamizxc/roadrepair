@@ -1,5 +1,12 @@
 /* ===== АСФАЛЬТПРО — Main JS ===== */
 
+const COMPARE_START = 50;
+const COMPARE_END = 0;
+const COMPARE_DELAY = 3000;
+const COMPARE_DURATION = 2500;
+
+const compareTimers = new WeakMap();
+
 document.addEventListener('DOMContentLoaded', () => {
   initPreloader();
   initNavigation();
@@ -20,7 +27,7 @@ function initPreloader() {
     const activePage = document.querySelector('.page.active');
     if (activePage) {
       const compare = activePage.querySelector('.hero__compare');
-      if (compare) playRollerAnimation(compare);
+      if (compare) startCompareSequence(compare);
     }
   }, 2000);
 }
@@ -43,6 +50,8 @@ function initNavigation() {
     pages.forEach(p => p.classList.remove('active'));
     navLinks.forEach(l => l.classList.remove('active'));
 
+    document.querySelectorAll('.hero__compare').forEach(cancelCompareSequence);
+
     const target = document.getElementById(`page-${pageId}`);
     const link = document.querySelector(`[data-nav="${pageId}"]`);
     if (target) target.classList.add('active');
@@ -54,7 +63,7 @@ function initNavigation() {
 
     setTimeout(() => {
       const compare = target?.querySelector('.hero__compare');
-      if (compare) playRollerAnimation(compare);
+      if (compare) startCompareSequence(compare);
     }, 400);
   }
 
@@ -84,35 +93,62 @@ function initNavigation() {
   });
 }
 
-/* --- Before/After Compare with Roller --- */
+/* --- Before/After Compare --- */
+function setComparePosition(compare, val) {
+  compare.style.setProperty('--pos', val + '%');
+  const slider = compare.querySelector('.hero__slider');
+  if (slider) slider.value = val;
+}
+
+function cancelCompareSequence(compare) {
+  const timer = compareTimers.get(compare);
+  if (timer) {
+    clearTimeout(timer);
+    compareTimers.delete(compare);
+  }
+  compare.classList.remove('animating');
+}
+
+function startCompareSequence(compare) {
+  if (!compare) return;
+
+  cancelCompareSequence(compare);
+  setComparePosition(compare, COMPARE_START);
+  compare.classList.add('ready');
+  compare.classList.remove('animating');
+
+  const timer = setTimeout(() => {
+    playRevealAnimation(compare);
+    compareTimers.delete(compare);
+  }, COMPARE_DELAY);
+
+  compareTimers.set(compare, timer);
+}
+
 function initCompareSliders() {
   document.querySelectorAll('.hero__compare').forEach(compare => {
     const slider = compare.querySelector('.hero__slider');
     const replayBtn = compare.closest('.hero')?.querySelector(`[data-replay="${compare.id}"]`);
 
-    function setPosition(val) {
-      compare.style.setProperty('--pos', val + '%');
-      slider.value = val;
-    }
+    setComparePosition(compare, COMPARE_START);
 
     slider.addEventListener('input', () => {
-      compare.classList.add('interacted');
-      setPosition(slider.value);
+      cancelCompareSequence(compare);
+      compare.classList.add('ready');
+      setComparePosition(compare, slider.value);
     });
 
-    replayBtn?.addEventListener('click', () => playRollerAnimation(compare));
+    replayBtn?.addEventListener('click', () => startCompareSequence(compare));
   });
 }
 
-function playRollerAnimation(compare) {
+function playRevealAnimation(compare) {
   if (!compare || compare.classList.contains('animating')) return;
 
-  const slider = compare.querySelector('.hero__slider');
   compare.classList.add('animating');
-  compare.classList.remove('interacted');
 
-  let pos = 0;
-  const duration = 2800;
+  const from = COMPARE_START;
+  const to = COMPARE_END;
   const start = performance.now();
 
   function easeInOutCubic(t) {
@@ -120,22 +156,17 @@ function playRollerAnimation(compare) {
   }
 
   function frame(now) {
-    const elapsed = now - start;
-    const progress = Math.min(elapsed / duration, 1);
-    pos = easeInOutCubic(progress) * 100;
-    compare.style.setProperty('--pos', pos + '%');
-    slider.value = pos;
+    const progress = Math.min((now - start) / COMPARE_DURATION, 1);
+    const pos = from + (to - from) * easeInOutCubic(progress);
+    setComparePosition(compare, pos);
 
     if (progress < 1) {
       requestAnimationFrame(frame);
     } else {
       compare.classList.remove('animating');
-      compare.classList.add('interacted');
     }
   }
 
-  compare.style.setProperty('--pos', '0%');
-  slider.value = 0;
   requestAnimationFrame(frame);
 }
 
@@ -162,13 +193,6 @@ function initCalculators() {
   document.querySelectorAll('.calc').forEach(calc => {
     const type = calc.dataset.calc;
     const inputs = calc.querySelectorAll('[data-field]');
-
-    function getVal(field) {
-      const el = calc.querySelector(`[data-field="${field}"]`);
-      if (!el) return null;
-      if (el.type === 'checkbox') return el.checked;
-      return el.value;
-    }
 
     function update() {
       const result = calculate(type, calc);
@@ -294,7 +318,6 @@ function getField(calc, field) {
 
 function openFormWithCalc(service) {
   const calc = document.querySelector(`[data-calc="${service}"]`);
-  const form = document.getElementById('contactForm');
   const summary = document.getElementById('calcSummary');
 
   document.getElementById('formService').value = service;

@@ -233,22 +233,23 @@ input, select, textarea { font-family: inherit; font-size: 1rem; }
 .hero__compare {
   position: absolute;
   inset: 0;
-  --pos: 0%;
+  --pos: 50%;
 }
 
 .hero__before,
 .hero__after {
   position: absolute;
   inset: 0;
-  background-image: var(--bg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero__before { z-index: 1; }
 
 .hero__after {
   z-index: 2;
+  /* pos=0 → только «После», pos=50 → пополам, pos=100 → только «До» */
   clip-path: inset(0 0 0 var(--pos));
 }
 
@@ -289,8 +290,13 @@ input, select, textarea { font-family: inherit; font-size: 1rem; }
   opacity: 0;
 }
 
+.hero__compare.ready .hero__handle,
 .hero__compare.animating .hero__roller,
-.hero__compare.interacted .hero__roller {
+.hero__compare.animating .hero__handle {
+  opacity: 1;
+}
+
+.hero__compare.animating .hero__roller {
   opacity: 1;
 }
 
@@ -317,6 +323,8 @@ input, select, textarea { font-family: inherit; font-size: 1rem; }
   z-index: 12;
   pointer-events: none;
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .hero__handle::before {
